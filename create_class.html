@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>创建班级</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/create_class.css">
+</head>
+<body>
+    <div class="edupf-hd-warp">
+        <div class="edupf-hd">
+            <div class="hd-logo"></div>
+            <div class="hd-nav">
+                <ul class="hd-nav-list">
+                    <li><a href="" class="hd-nav-item">首页</a></li>
+                    <li><a href="" class="hd-nav-item">教学管理</a></li>
+                    <li><a href="" class="hd-nav-item">学习</a></li>
+                    <li><a href="" class="hd-nav-item">资源超市</a></li>
+                    <li><a href="" class="hd-nav-item">教育应用</a></li>
+                    <li><a href="" class="hd-nav-item">新闻</a></li>
+                    <li><a href="" class="hd-nav-item">名校名师</a></li>
+                </ul>
+            </div>
+            <div class="hd-right">
+                <div class="hd-right__new-fea"></div>
+                <div class="hd-right__search"></div>
+                <div class="hd-right__user">
+                    <div class="hd-right__user-avatar"></div>
+                    <div class="hd-right__user-name"><a href="">Coco</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="edupf-main">
+        <div class="edupf-sidebar">
+                <!-- <div class="person-center"> -->
+                    <div class="person-center-tab">
+                        <i class="back"></i>
+                        <span>个人中心</span>
+                        <i class="more"></i>
+                    </div>
+                    <ul class="person-center-list">
+                        <li><a href="" class="person-center-item"><span class="icon1"></span>其他内容</a></li>
+                        <li><a href="" class="person-center-item"><span class="icon2"></span>其他内容</a></li>
+                        <li class="ui-on"><a href="" class="person-center-item"><span class="icon3"></span>我的班级</a></li>
+                        <li><a href="" class="person-center-item"><span class="icon4"></span>其他内容</a></li>
+                    </ul>
+                </div>
+        <!-- </div> -->
+        <div class="edupf-content">
+            <div class="content-tab">
+                <div class="content-tab__my-class">我的班级</div>
+               
+                <div class="content-tab__create-class"><a href="optimize_my_class.html">返回上一级</a></div>
+            </div>
+            <div class="content-main">
+                <div class="create-class-main">
+                    <p>尊敬的<span class="teacher-name">老师（刘老师）</span>，请填写班级信息：</p>
+                    <form action="">
+                    <label class="label" for="school">学校</label>
+                    <input class="create-class-input" type="text" id="school" placeholder="请选择学校"><br>
+                    <label class="label" for="phase"><span class="input-required">* </span>学段</label>
+                    <!-- <input class="create-class-input" type="text" id="phase" placeholder="请选择学段"><br> -->
+                    <select class="create-class-input" name="" id="phase" required>
+                        <option value="" hidden>请选择学段</option>
+                        <option value="小学">小学</option>
+                        <option value="初中">初中</option>
+                        <option value="高中">高中</option>
+                        <option value="大学">大学</option>
+                    </select><br>
+                    <label class="label" for="grade"><span class="input-required">* </span>年级</label>
+                    <!-- <input class="create-class-input" type="text" id="grade" placeholder="请选择年级"><br> -->
+                    <select class="create-class-input" name="" id="phase" required>
+                            <option value="" hidden>请选择年级</option>
+                            <option value="一年级">一年级</option>
+                            <option value="二年级">二年级</option>
+                            <option value="三年级">三年级</option>
+                        </select><br>
+                    <label class="label" for="classname"><span class="input-required">* </span>班级名</label>
+                    <input class="create-class-input" type="text" id="classname" placeholder="请输入班级名称，限20个字符，不支持输入_和%"  required><br>
+                    <label class="label" >类型</label>
+                    <div class="create-class-input">
+                        <label><input name="type" type="radio" value="" checked />行政班</label> 
+                        <label><input name="type" type="radio" value="" />教学班</label> 
+                    </div>
+                    <br>
+                    <label class="label">退出权限设置</label>
+                    <div class="create-class-input">
+                        <label><input name="quit" type="radio" value="" checked/>允许退出</label> 
+                        <label><input name="quit" type="radio" value="" />通过班级管理员审核后退出</label> 
+                        <label><input name="quit" type="radio" value="" />禁止退出</label> 
+                    </div>
+                    <br>
+                    <div class="save"><a href="">保存</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
